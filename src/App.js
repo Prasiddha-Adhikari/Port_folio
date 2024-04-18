@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+// Importing components
+import Header from "./components/Header/Header";
+import Hero from './components/Hero/Hero';
+import Works from './components/Works/Works';
+import About from "./components/About/About";
+
+// React Router
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Intro from "./components/About/Intro";
+import Experience from "./components/About/Experience";
+// import Internships from './components/About/RouteComponents/Internships';
+import Graduation from './components/About/Graduation';
+import Skill from './components/Skill/Skill';
+import Footer from "./components/Footer/Footer";
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <>
+                <Header />
+                <Hero /> 
+                <Works /> 
+                <About />
+                <Skill /> 
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+          <Route exact path="/about/intro" element={<Intro />} />
+          <Route exact path="/about/experience" element={<Experience />} />
+          {/* <Route exact path="/about/internships" element={<Internships />} /> */}
+          <Route exact path="/about/graduation" element={<Graduation />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Port_folio/static/css/main.c51bcc3b.css",
+    "main.js": "/Port_folio/static/js/main.69737050.js",
+    "static/media/myself.png": "/Port_folio/static/media/myself.fbce675f18074fa7973f.png",
+    "static/media/Redwing-Medium.otf": "/Port_folio/static/media/Redwing-Medium.7402d4c764b8807db59b.otf",
+    "static/media/Redwing-Light.otf": "/Port_folio/static/media/Redwing-Light.bda278368d19c572f2f2.otf",
+    "static/media/angle-down.svg": "/Port_folio/static/media/angle-down.11e201872eb97a54f0d3.svg",
+    "index.html": "/Port_folio/index.html",
+    "static/media/triangle.svg": "/Port_folio/static/media/triangle.5172a3481a7112a7a103.svg",
+    "main.c51bcc3b.css.map": "/Port_folio/static/css/main.c51bcc3b.css.map",
+    "main.69737050.js.map": "/Port_folio/static/js/main.69737050.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c51bcc3b.css",
+    "static/js/main.69737050.js"
+  ]
+}
